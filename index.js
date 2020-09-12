@@ -5,6 +5,7 @@
 
 
 const Discord = require('discord.js');
+const config = require('./config.json');
 const client = new Discord.Client();
 
 const fs = require('fs');
@@ -12,7 +13,7 @@ const fs = require('fs');
 const cheerio = require('cheerio');
 const request = require('request');
 
-const token = 'NjcyNjA0ODgxNTgzODY1ODc2.XlXfNQ.jgDjFRGOm4fGWcd7FpO4uOtMo4g';
+const token = config.token;
 
 const PREFIX = '#';
 
